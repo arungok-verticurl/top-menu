@@ -26,7 +26,7 @@
 
   _.init = function() {
     const ang = 180 / _.data.length;
-    _.data.map((nav) => {
+    _.data.map(function(nav) {
       const span = document.createElement("span");
       const a = document.createElement("a");
       a.href = "javascript:void(0)";
@@ -45,7 +45,7 @@
         a.style.transform = `translateX(-50%) rotate(${
           -((index * 1 + 1) * (ang - 1.95)) + 90
         }deg)`;
-        a.addEventListener("hover", () => {
+        a.addEventListener("hover", function() {
           this.style.transform += " scale(1.2)";
         });
       }
