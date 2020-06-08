@@ -43,6 +43,7 @@
         _.circle();
         break;
       default:
+        _.rectangle();
     }
   };
 
@@ -65,4 +66,14 @@
     _.navEle.style.height = _.navEle.childNodes[0].clientHeight + "px";
     _.navEle.style.width = _.navEle.childNodes[0].clientHeight + "px";
   };
+
+  _.rectangle = function() {
+    _.navEle.parentNode.classList.add('rectangle');
+    _.navEle.parentNode.addEventListener('mouseenter', function() {
+      _.navEle.style.height = '87px';
+    })
+    _.navEle.parentNode.addEventListener('mouseleave', function() {
+      _.navEle.style.height = "0";
+    })
+  }
 })();
