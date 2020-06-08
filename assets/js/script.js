@@ -19,12 +19,11 @@
   _.navEle = _.getEleClass("nav-list");
   _.expand = _.getEleClass("expand-icon");
   $.ajax("./assets/menu.json").done(function (res) {
-    _.data = res;
-    _.init();
+    _.data = res.list;
+    _.init(res.style);
   });
 
-  _.init = function () {
-    var ang = 180 / _.data.length;
+  _.init = function (style) {
     _.data.map(function (nav) {
       var span = document.createElement("span");
       var a = document.createElement("a");
@@ -39,6 +38,17 @@
       span.append(a);
       _.navEle.append(span);
     });
+    switch (style) {
+      case "circle":
+        _.circle();
+        break;
+      default:
+    }
+  };
+
+  _.circle = function () {
+    var ang = 180 / _.data.length;
+    _.navEle.parentNode.classList.add('circle');
     for (var index in _.navEle.childNodes) {
       var a = _.navEle.childNodes[index];
       if (!isNaN(index)) {
@@ -50,7 +60,8 @@
         });
       }
     }
-    _.navEle.style.top = "-" + (_.navEle.childNodes[0].clientHeight / 2 + 40) + "px";
+    _.navEle.style.top =
+      "-" + (_.navEle.childNodes[0].clientHeight / 2 + 40) + "px";
     _.navEle.style.height = _.navEle.childNodes[0].clientHeight + "px";
     _.navEle.style.width = _.navEle.childNodes[0].clientHeight + "px";
   };
