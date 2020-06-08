@@ -38,15 +38,31 @@ html {
           left: 50%;
           a {
             display: inline-block;
-            transition: all .5s ease;
+            transition: all .2s ease-in;
+            color: rgba(white, .4);
+            text-decoration: none;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transform-origin: center center;
+            & > * {
+              color: rgba(white, .6);
+              text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+            }
             i {
               font-size: 3rem;
-              color: white;
-              text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+            }
+            small {
+              font-size: 1.2rem;
+              padding-top: 5px;
             }
             &:hover {
               transform: scale(1.2);
-              transform-origin: center center;
+              color: white;
+              & > * {
+                color: white;
+              }
             }
           }
         }

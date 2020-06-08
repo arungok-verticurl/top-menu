@@ -33,6 +33,9 @@
       var i = document.createElement("i");
       i.className = nav.icon;
       a.append(i);
+      var i = document.createElement("small");
+      i.innerText = nav.name;
+      a.append(i);
       span.append(a);
       _.navEle.append(span);
     });
