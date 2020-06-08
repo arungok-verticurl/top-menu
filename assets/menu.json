@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Home",
+    "icon": "icon-house"
+  },
+  {
+    "name": "Admin",
+    "icon": "icon-official"
+  },
+  {
+    "name": "Profile",
+    "icon": "icon-user"
+  },
+  {
+    "name": "Loyalty",
+    "icon": "icon-loyalty"
+  },
+  {
+    "name": "Settings",
+    "icon": "icon-settings"
+  },
+  {
+    "name": "E-Detailing",
+    "icon": "icon-details"
+  },
+  {
+    "name": "Profile",
+    "icon": "icon-profile1"
+  },
+  {
+    "name": "OC3",
+    "icon": "icon-connectdevelop"
+  },
+  {
+    "name": "Logout",
+    "icon": "icon-exit1"
+  }
+]
