@@ -19,7 +19,7 @@
   _.navEle = _.getEleClass("nav-list");
   _.expand = _.getEleClass("expand-icon");
   $.ajax("./assets/menu.json")
-    .done((res) => {
+    .done(function(res) {
       _.data = res;
       _.init();
     });
