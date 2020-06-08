@@ -47,7 +47,7 @@
         });
       }
     }
-    _.navEle.style.top = (-_.navEle.childNodes[0].clientHeight / 2 + 40) + "px";
+    _.navEle.style.top = "-" + (_.navEle.childNodes[0].clientHeight / 2 + 40) + "px";
     _.navEle.style.height = _.navEle.childNodes[0].clientHeight + "px";
     _.navEle.style.width = _.navEle.childNodes[0].clientHeight + "px";
   };

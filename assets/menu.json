@@ -1,38 +1,47 @@
 [
   {
     "name": "Home",
-    "icon": "icon-house"
+    "icon": "icon-house",
+    "href": "javascript:void(0)"
   },
   {
     "name": "Admin",
-    "icon": "icon-official"
+    "icon": "icon-official",
+    "href": "javascript:void(0)"
   },
   {
     "name": "Profile",
-    "icon": "icon-user"
+    "icon": "icon-user",
+    "href": "javascript:void(0)"
   },
   {
     "name": "Loyalty",
-    "icon": "icon-loyalty"
+    "icon": "icon-loyalty",
+    "href": "javascript:void(0)"
   },
   {
     "name": "Settings",
-    "icon": "icon-settings"
+    "icon": "icon-settings",
+    "href": "javascript:void(0)"
   },
   {
     "name": "E-Detailing",
-    "icon": "icon-details"
+    "icon": "icon-details",
+    "href": "javascript:void(0)"
   },
   {
     "name": "Profile",
-    "icon": "icon-profile1"
+    "icon": "icon-profile1",
+    "href": "javascript:void(0)"
   },
   {
     "name": "OC3",
-    "icon": "icon-connectdevelop"
+    "icon": "icon-connectdevelop",
+    "href": "javascript:void(0)"
   },
   {
     "name": "Logout",
-    "icon": "icon-exit1"
+    "icon": "icon-exit1",
+    "href": "javascript:void(0)"
   }
 ]

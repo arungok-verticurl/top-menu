@@ -1,12 +1,16 @@
 @import "./material-colors";
 @import "./fonts";
 
+$primary: #89C638;
+$seconday: rgba(#89C638, .1);
+$color: #89C638;
+
 html {
-  background-color: $deep-purple-50;
+  background-color: $seconday;
   font-size: 10px;
   * {
     box-sizing: border-box;
-    color: $deep-purple;
+    color: $color;
   }
   body {
     padding: 0;
@@ -19,7 +23,7 @@ html {
       .nav-list {
         display: inline-flex;
         position: absolute;
-        background-color: $deep-purple;
+        background-color: $primary;
         transition: all 1s ease-out;
         transform: scale(0) translateY(-50%);
         border-radius: 50%;
@@ -52,7 +56,7 @@ html {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: $deep-purple;
+        background-color: $primary;
         padding: 10px 15px;
         position: absolute;
         left: 50%;
