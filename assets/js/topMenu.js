@@ -39,6 +39,9 @@ function topMenu(parent, data) {
       case "circle":
         _.circle();
         break;
+      case "ellipse":
+        _.ellipse();
+        break;
       default:
         _.rectangle();
     }
@@ -64,6 +67,20 @@ function topMenu(parent, data) {
     _.navEle.style.width = _.navEle.childNodes[0].clientHeight + "px";
   };
 
+  _.ellipse = function() {
+    _.navEle.parentNode.classList.add("rectangle");
+    _.navEle.parentNode.addEventListener("mouseenter", function () {
+      _.navEle.style.height = "174px";
+    });
+    _.navEle.parentNode.addEventListener("mouseleave", function () {
+      _.navEle.style.height = "0";
+    });
+    _.navEle.style.width = Math.ceil(_.data.length / 2) * 87 + 40 + "px";
+    _.navEle.style.flexWrap = "wrap";
+    _.navEle.style.justifyContent = "center";
+    _.navEle.style.borderRadius = "0 0 50% 50%";
+  };
+
   _.rectangle = function () {
     _.navEle.parentNode.classList.add("rectangle");
     _.navEle.parentNode.addEventListener("mouseenter", function () {
@@ -73,6 +90,6 @@ function topMenu(parent, data) {
       _.navEle.style.height = "0";
     });
   };
-  
+
   _.init(data.style);
 }
