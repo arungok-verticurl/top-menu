@@ -39,9 +39,9 @@
     for (var index in _.navEle.childNodes) {
       var a = _.navEle.childNodes[index];
       if (!isNaN(index)) {
-        var ang = -((index * 1 + 1) * (ang - 1.95)) + 90;
+        var rotAng = -((index * 1 + 1) * (ang - 1.95)) + 90;
         a.style.paddingTop = _.navEle.childNodes.length * 50 + "px";
-        a.style.transform = "translateX(-50%) rotate(" + ang + "deg)";
+        a.style.transform = "translateX(-50%) rotate(" + rotAng + "deg)";
         a.addEventListener("hover", function () {
           this.style.transform += " scale(1.2)";
         });
