@@ -4932,6 +4932,8 @@ html * { box-sizing: border-box; color: #89c638; }
 
 html body { padding: 0; margin: 0; }
 
+html body .container { min-height: 250px; overflow: hidden; }
+
 html body nav { display: flex; justify-content: center; align-items: center; position: relative; }
 
 html body nav .expand-icon { display: inline-flex; justify-content: center; align-items: center; flex-direction: column; background-color: #89c638; padding: 10px 15px; width: 43px; height: 43px; border-radius: 0 0 50% 50%; box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.5); }
@@ -4954,7 +4956,7 @@ html body nav .nav-list span a:hover { transform: scale(1.2); color: white; }
 
 html body nav .nav-list span a:hover > * { color: white; }
 
-html body nav.circle .expand-icon { top: 0; z-index: 10; position: absolute; left: 50%; transform: translate(-50%, 0); }
+html body nav.circle .expand-icon { position: relative; z-index: 10; }
 
 html body nav.circle .nav-list { position: absolute; transform: scale(0) translateY(-50%); border-radius: 50%; }
 
