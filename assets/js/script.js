@@ -21,7 +21,7 @@
 
   $.ajax("./assets/menu.json")
     .done((res) => {
-      _.data = res.json();
+      _.data = JSON.parse(res);
       init();
     });
 
