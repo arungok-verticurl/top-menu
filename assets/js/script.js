@@ -18,10 +18,10 @@
   };
   _.navEle = _.getEleClass("nav-list");
   _.expand = _.getEleClass("expand-icon");
-  fetch("./assets/menu.json")
-    .then((res) => res.json())
-    .then((data) => {
-      _.data = data;
+
+  $.ajax("./assets/menu.json")
+    .done((res) => {
+      _.data = res.json();
       init();
     });
 
