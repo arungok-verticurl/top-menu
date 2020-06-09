@@ -67,7 +67,7 @@ function topMenu(parent, data) {
     _.navEle.style.width = _.navEle.childNodes[0].clientHeight + "px";
   };
 
-  _.ellipse = function() {
+  _.ellipse = function () {
     _.navEle.parentNode.classList.add("rectangle");
     _.navEle.parentNode.addEventListener("mouseenter", function () {
       _.navEle.style.height = "174px";
@@ -83,8 +83,12 @@ function topMenu(parent, data) {
 
   _.rectangle = function () {
     _.navEle.parentNode.classList.add("rectangle");
+    _.navEle.style.transform = "translateY(-100%)";
+    var ht = _.navEle.clientHeight;
+    _.navEle.style.transform = "none";
+    _.navEle.style.height = "0";
     _.navEle.parentNode.addEventListener("mouseenter", function () {
-      _.navEle.style.height = "87px";
+      _.navEle.style.height = ht + "px";
     });
     _.navEle.parentNode.addEventListener("mouseleave", function () {
       _.navEle.style.height = "0";

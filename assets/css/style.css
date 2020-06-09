@@ -4964,8 +4964,8 @@ html body nav.circle .nav-list span { position: absolute; }
 
 html body nav.circle:hover .nav-list { transform: scale(1); }
 
-html body nav.rectangle { display: flex; flex-direction: column; align-items: center; flex-wrap: wrap; max-width: 700px; margin: 0 auto; }
+html body nav.rectangle { display: flex; flex-direction: column; align-items: center; flex-wrap: wrap; max-width: 80%; margin: 0 auto; }
 
-html body nav.rectangle .nav-list { position: relative; transform-origin: top; height: 0; transform: none; border-radius: 0 0 20px 20px; }
+html body nav.rectangle .nav-list { position: relative; transform-origin: top; transform: none; border-radius: 0 0 20px 20px; max-width: inherit; flex-wrap: wrap; justify-content: center; transition: height .5s ease; }
 
 html body nav.rectangle .expand-icon { position: relative; }
