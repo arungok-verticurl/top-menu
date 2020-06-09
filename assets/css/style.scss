@@ -76,6 +76,7 @@ html {
             small {
               font-size: 1.2rem;
               padding-top: 5px;
+              white-space: nowrap;
             }
             &:hover {
               transform: scale(1.2);

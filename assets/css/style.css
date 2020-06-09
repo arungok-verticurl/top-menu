@@ -4950,7 +4950,7 @@ html body nav .nav-list span a > * { color: rgba(255, 255, 255, 0.6); text-shado
 
 html body nav .nav-list span a i { font-size: 3rem; }
 
-html body nav .nav-list span a small { font-size: 1.2rem; padding-top: 5px; }
+html body nav .nav-list span a small { font-size: 1.2rem; padding-top: 5px; white-space: nowrap; }
 
 html body nav .nav-list span a:hover { transform: scale(1.2); color: white; }
 

@@ -1,55 +1,5 @@
 [
   {
-    "style": "ellipse",
-    "list": [
-      {
-        "name": "Home",
-        "icon": "icon-house",
-        "href": "javascript:void(0)"
-      },
-      {
-        "name": "Admin",
-        "icon": "icon-official",
-        "href": "javascript:void(0)"
-      },
-      {
-        "name": "Profile",
-        "icon": "icon-user",
-        "href": "javascript:void(0)"
-      },
-      {
-        "name": "Loyalty",
-        "icon": "icon-loyalty",
-        "href": "javascript:void(0)"
-      },
-      {
-        "name": "Settings",
-        "icon": "icon-settings",
-        "href": "javascript:void(0)"
-      },
-      {
-        "name": "E-Detailing",
-        "icon": "icon-details",
-        "href": "javascript:void(0)"
-      },
-      {
-        "name": "Profile",
-        "icon": "icon-profile1",
-        "href": "javascript:void(0)"
-      },
-      {
-        "name": "OC3",
-        "icon": "icon-connectdevelop",
-        "href": "javascript:void(0)"
-      },
-      {
-        "name": "Logout",
-        "icon": "icon-exit1",
-        "href": "javascript:void(0)"
-      }
-    ]
-  },
-  {
     "style": "rectangle",
     "list": [
       {
@@ -58,12 +8,7 @@
         "href": "javascript:void(0)"
       },
       {
-        "name": "Admin",
-        "icon": "icon-official",
-        "href": "javascript:void(0)"
-      },
-      {
-        "name": "Profile",
+        "name": "Customer",
         "icon": "icon-user",
         "href": "javascript:void(0)"
       },
@@ -73,8 +18,8 @@
         "href": "javascript:void(0)"
       },
       {
-        "name": "Settings",
-        "icon": "icon-settings",
+        "name": "OC3",
+        "icon": "icon-connectdevelop",
         "href": "javascript:void(0)"
       },
       {
@@ -83,28 +28,8 @@
         "href": "javascript:void(0)"
       },
       {
-        "name": "Profile",
-        "icon": "icon-profile1",
-        "href": "javascript:void(0)"
-      },
-      {
-        "name": "OC3",
-        "icon": "icon-connectdevelop",
-        "href": "javascript:void(0)"
-      },
-      {
-        "name": "Logout",
-        "icon": "icon-exit1",
-        "href": "javascript:void(0)"
-      }
-    ]
-  },
-  {
-    "style": "circle",
-    "list": [
-      {
-        "name": "Home",
-        "icon": "icon-house",
+        "name": "Settings",
+        "icon": "icon-settings",
         "href": "javascript:void(0)"
       },
       {
@@ -113,33 +38,8 @@
         "href": "javascript:void(0)"
       },
       {
-        "name": "Profile",
-        "icon": "icon-user",
-        "href": "javascript:void(0)"
-      },
-      {
-        "name": "Loyalty",
-        "icon": "icon-loyalty",
-        "href": "javascript:void(0)"
-      },
-      {
-        "name": "Settings",
-        "icon": "icon-settings",
-        "href": "javascript:void(0)"
-      },
-      {
-        "name": "E-Detailing",
-        "icon": "icon-details",
-        "href": "javascript:void(0)"
-      },
-      {
-        "name": "Profile",
+        "name": "My Profile",
         "icon": "icon-profile1",
-        "href": "javascript:void(0)"
-      },
-      {
-        "name": "OC3",
-        "icon": "icon-connectdevelop",
         "href": "javascript:void(0)"
       },
       {
