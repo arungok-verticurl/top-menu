@@ -27,7 +27,8 @@ function topMenu(parent, data) {
       a.href = "javascript:void(0)";
       a.title = nav.name;
       var i = document.createElement("i");
-      i.className = nav.icon;
+      i.className = "material-icons";
+      i.innerText = nav.icon;
       a.append(i);
       var i = document.createElement("small");
       i.innerText = nav.name;
@@ -87,6 +88,13 @@ function topMenu(parent, data) {
     var ht = _.navEle.clientHeight;
     _.navEle.style.transform = "none";
     _.navEle.style.height = "0";
+    window.addEventListener("resize", function () {
+      _.navEle.style.height = "auto";
+      _.navEle.style.transform = "translateY(-100%)";
+      ht = _.navEle.clientHeight;
+      _.navEle.style.transform = "none";
+      _.navEle.style.height = "0";
+    });
     _.navEle.parentNode.addEventListener("mouseenter", function () {
       _.navEle.style.height = ht + "px";
     });
